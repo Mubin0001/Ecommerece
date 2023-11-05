@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding:  0px;
+    background-color: black;
+    align-items: center;
+}
+nav div{
+    width: 500px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+nav #left img{
+    padding: 0rem;
+width: 20%;
+
+}
+
+nav #center #content{
+    display: flex;
+    list-style-type: none;
+    padding: 1rem;
+    
+}
+nav  #center #content  a{
+    padding: 1rem 2rem;
+}
+nav #right{
+    display: flex;
+    gap: 2rem;
+justify-content: center;
+align-items: center;
+
+}
+nav #right button{
+    width: 20%;
+    height: 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: grey;
+    
+}
+nav #carosel{
+    position: relative;
+}
+
+#malemenu{
+    list-style: none;
+    position: absolute;
+    background-color: rgba(70, 144, 168, 0.989);
+    top: 100%;
+    left: 0%;
+    display: none;
+    z-index: 99;
+}
+#male{
+    position: relative;
+}
+/* #male:hover #malemenu{
+    display: block;
+} */
+
+#femalemenu{
+    list-style: none;
+    position: absolute;
+    background-color:rgba(70, 144, 168, 0.989);
+   top: 100%;
+   left: 0;
+display: none;
+    z-index: 99;
+}
+#female{
+    position: relative;
+}
+#mobilemenu{
+    list-style: none;
+    position: absolute;
+    background-color: rgba(70, 144, 168, 0.989);
+    top: 100%;
+    left: 0%;
+    display: none;
+    z-index: 99;
+}
+
+#mobile:hover #mobilemenu{
+    display: block;
+}
+#mobile{
+    position: relative;
+}
+
+nav span {
+    color: white;
+}
+#shirts{
+    /* background-color: red; */
+    width: 80%;
+    margin: auto;
+
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .row div{
+    width: 30%;
+    
+} */
+
+.row{
+    display: grid;
+    /* by using grid we dont have to use css again and again  */
+    grid-template-columns: repeat(3,30%);
+    justify-content: space-between;
+    gap: 2rem;
+    /* if we use gap with thegrid so it will work for 2 things horizontal and vertical  */
+}
+.row div img{
+ width: 100%;   
+}
+.row div h3{
+    font-size:1.5rem;
+    color: rebeccapurple;
+    margin-bottom: .5rem;
+}
+.row div p{
+    font-size:1.5rem;
+    /* color: rebeccapurple; */
+    margin-bottom: .5rem; 
+}
+
+.row div div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+
+}
+.row div h4{
+    margin-bottom: .5rem;
+
+}
+.row div button {
+    width: 100%;
+    height: 3rem;
+    background-color: aquamarine;
+    color: blue;
+    font-size: 1rem;
+    font-weight: 900;
+
+}
